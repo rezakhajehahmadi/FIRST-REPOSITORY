@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="grid.css">
+    <!--    <link rel="stylesheet" media="screen and (maxwidth:768px)" href="mobile.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.header{
+    background-color: #064adb;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding:20px 10px 0 10px;
+}
+.logo{
+    width: 70px;
+    height:70px;
+    padding-bottom: 30px;
+}
+.nav-menu li{
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.nav-menu li a{
+    color: white;
+    padding: 25px 10px;
+}
+.nav-menu li a:hover{
+    color: orangered;
+
+}
+.login-btn{
+    color: yellow;
+    background-color: black;
+    border: hidden;
+    padding: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.trial{
+    color: yellow;
+    background-color: black;
+    border: hidden;
+    padding: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.login-btn:hover{
+    /*padding: 15px;*/
+    background-color: white;
+    color: black;
+}
+.trial:hover{
+    background-color: white;
+    color: black;
+}
+.header-resume{
+    background-color: #064adb;
+    width: 100%;
+    height: 500px;
+}
+.header-ahref{
+    color:#F39C12;
+}
+.header-text{
+    color: white;
+    font-size: xxx-large;
+    font-weight:bolder;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.btn-second{
+    border: hidden;
+    background-color: #fd8700;
+    width: 450px;
+    height: 80px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-second-style{
+    color: white;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-second:hover{
+    background-color:#D68910;
+}
+.main-1{
+    background-color:#F2F4F4;
+    width: 100%;
+    height: 250px;
+}
+.first-text{
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 45px;
+}
+.second-text{
+    color: #f08619;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.third-text{
+    color: #064adb;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.fourth-text{
+    color: #064adb;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.main-2{
+    color: black;
+    width: 100%;
+    height: 200px;
+}
+.main-3{
+    text-align: center;
+    font-size: 90px;
+    font-weight: bolder;
+}
+.main-5{
+    width: 524px;
+    height: 550px;
+    padding-left: 80px;
+}
+.main-4{
+    display: flex;
+    justify-content: center;
+    height:500px;
+
+}
+.main-6{
+    line-height: 65px;
+    font-size: xx-large;
+    padding:0 75px;
+}
+.main-6 span{
+    color: #064adb;
+    font-weight: bold;
+}
+.main-7{
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    padding: 250px ;
+}
+.main-8{
+    width: 950px;
+    height: 800px;
+}
+.main-9{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+}
+.main11{
+    color: #f08619;
+}
+.main13{
+    color: #064adb;
+    font-size: 70px;
+    font-weight: bold;
+}
+.main-12{
+    display: flex;
+    justify-content: flex-start;
+    height: 200px;
+    padding-left: 40px;
+}
+.main13:hover{
+    color: #f08619;
+}
+.main-14{
+    background-color: #064adb;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-15{
+    border: hidden;
+    background-color: white;
+    width: 1300px;
+    height: 900px;
+    border-radius: 100px;
+}
+.main-16{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 119px
+}
+.main-17{
+    /*align-items: center;*/
+    /*padding: 100px;*/
+}
+
+
+.main19{
+    height: 220px;
+    width:320px;
+}
+.main20{
+    line-height:50px;
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.main-23{
+    height: 220px;
+    width:320px;
+}
+.main-24{
+    line-height:50px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main-27{
+    height: 220px;
+    width:320px;
+}
+.main-28{
+    line-height:30px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main-29{
+    line-height:50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main-30{
+    line-height:50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-31{
+    color: #064adb;
+}
+.main-31:hover{
+    color:#f08619;
+}
+.main-32{
+    color: #064adb;
+}
+.main-32:hover{
+    color:#f08619;
+}
+.main-33{
+    color: #064adb;
+}
+.main-33:hover{
+
+}
+.main-34{
+    color: #064adb;
+}
+.main-34:hover{
+    color:#f08619;
+}
+.main-35{
+    line-height:50px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main-36{
+    color: #064adb;
+}
+.main-36:hover{
+    color:#f08619;
+}
+.main-37{
+    line-height:50px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main-38{
+    color: #064adb;
+}
+
+.main-38:hover{
+    color:#f08619;
+}
+.main-39{
+    font-size: 22px;
+    font-weight: bold;
+    color: #064adb;
+}
+.main-39:hover{
+    color:#f08619;
+}
+.main-40{
+    width: 100%;
+    height:850px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.main-41{
+    height: 450px;
+    width: 450px;
+    border-radius: 30px;
+}
+.main-42{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-43{
+    color: #F2F4F4;
+    font-size: 90px;
+    font-weight: bolder;
+}
+.main-44{
+    color: #F2F4F4;
+font-size: 45px;
+    font-weight: bold;
+}
+.btn-second-2{
+    padding-top: 50px;
+    border: hidden;
+    background-color: #fd8700;
+    width: 450px;
+    height: 80px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    
+    </style>
+
+</head>
+<body>
+<header class="header">
+    <img class="logo" src="ahref.jpg" alt="logo">
+    <nav>
+        <ul class="nav-menu">
+            <li><a class="menu-item" href="#">TOOLS</a> </li>
+            <li><a class="menu-item" href="#">OUR DATA</a></li>
+            <li><a class="menu-item" href="#">RESOURCES</a></li>
+            <li><a class="menu-item" href="#">PRICING</a></li>
+            <li><a class="menu-item" href="#">ENTERPRICES</a></li>
+        </ul>
+    </nav>
+    <a class="login-btn" href="#">LOG IN</a>
+    <a class="trial" href="#">FREE TRIAL</a>
+
+</header>
+<div class="header-resume">
+    <p class="header-text">With <span class="header-ahref">Ahrefs</span>, you don’t have to be an SEO pro<br> to rank higher and get more traffic </p>
+    <div class="btn-second">
+        <a href="#"><span class="btn-second-style">start 7-day trial for $7</span></a>
+
+    </div>
+</div>
+<main>
+    <div class="main-1">
+        <p class="first-text"> <span class="second-text">a</span><span class="third-text">hrefs</span> is an <span class="fourth-text">All-in-one SEO toolset</span><br> with free Learning materials and a passionate Community & support</p>
+    </div>
+    <div class="main-2">
+        <h1 class="main-3">All-in-one SEO toolset</h1>
+    </div>
+    <div class="main-4">
+        <img class="main-5" src="تولید%20محتوا.jpg" alt="seo-tool">
+        <div class="main-6">
+            <p>1-Optimize your website<br>
+                <span class="main7"> Site Audit →</span></p>
+            <p>2-Analyze your competitors<br>
+                <span>Site Explorer →</span></p>
+            <p>3-study what your customers are searching for<br>
+                <span>Keywords Explorer →</span></p>
+            <p>4-Learn from your industry’s top performing content<br>
+                <span> Content Explorer →</span></p>
+            <p>5-Track your ranking progress<br>
+                <span>Rank Tracker →</span></p>
+        </div>
+    </div>
+    <div class="main-7">
+        <img class="main-8" src="ahrefs.png">
+    </div>
+    <div class="main-9">
+        <p class="main-10"><span class="main11">Junior</span> marketer or SEO expert, you'll find Ahrefs’ toolset powerful yet easy to master.</p>
+    </div>
+    <div class="main-12">
+        <p class="main13">show why<sub>↕</sub></p>
+
+    </div>
+
+    <div class="main-14">
+        <div class="main-15">
+            <div class="main-16">
+
+                <div class="main17">
+                    <h2 class="main18">Watch weekly SEO tutorials</h2>
+                    <video class="main19" controls>
+                        <source src="06_Html.mp4" type="video/mp4">
+                    </video>
+                    <p class="main20">What is SEO and How Does it Work? <span class="main-31">Watch →</span><br></p>
+                    <p class="main-29">How to Do Keyword Research for a NEW Website. <span class="main-32">Watch →</span></p><br>
+                    <p class="main-30">Link Building for a New Website: 5 Actionable Ways to Get More Backlinks.<span class="main-33"> Watch →</span></p><br>
+                </div>
+                <div class="main-21">
+                    <h2 class="main-22">Read “How To” SEO guides</h2>
+                    <video class="main-23" controls>
+                        <source src="06_Html.mp4" type="video/mp4">
+                    </video>
+                    <p class="main-24">Search Engine Optimization —<br>Beginner’s Guide.<span class="main-34"> Read →</span></p>
+                    <p class="main-35">Keyword Research for SEO —<br> Beginner’s Guide. <span class="main-36">Read →</span></p><br>
+                    <p class="main-37">Link Building for SEO —<br> Beginner’s Guide.<span class="main-38"> Read →</span></p>
+
+                </div>
+                <div class="main-25">
+                    <h2 class="main-26">Get answers in the Help Center</h2>
+                    <video class="main-27" controls>
+                        <source src="06_Html.mp4" type="video/mp4">
+                    </video>
+                    <p class="main-28">Got a question about our tools or data? Chances are good that there's an answer ready for you.</p><br>
+                    <span class="main-39">300+ support articles in the Help Center →</span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-40">
+        <img class="main-41" src="women.jpg">
+        <div class="main-42">
+        <p class="main-43"> 7 days. 7 dollars.<br>Full access.</p>
+            <p class="main-44">Try Ahrefs for a week and discover<br> the growth opportunities you’re<br> missing.</p>
+            <div class="btn-second-2">
+                <a href="#"><span class="btn-second-style">start 7-day trial for $7</span></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
