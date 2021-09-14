@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        direction: rtl;
+        text-align: right !important;;
+    }
+    .test1{
+        background-color: #eb4034;
+        color: white;
+        width: 100px;
+        height: 45px;
+        border: none;
+        outline: none;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 10px;
+        font-size: x-large;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .navbar-font-1{
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    .test1:hover{
+        text-decoration: none;
+        color:#eb4034;
+        background-color: white;
+        transition: all 0.9s;
+    }
+    .test2{
+        background-color: black;
+        color: white;
+        width: 100px;
+        height: 45px;
+        border: none;
+        outline: none;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 10px;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .test2:hover{
+        text-decoration: none;
+        color:white;
+        background-color: #877473 ;
+        transition: all 0.4s;
+    }
+    #custom-navbar-brand{
+        color: red;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-size: large;
+        font-weight: bold;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #eb4034;
+        transition: all 0.4s;
+
+    }
+    .nav-item{
+        padding: 15px;
+    }
+    .main{
+        background-image: url("hero.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+    }
+    .text-main{
+        line-height: 60px;
+    }
+    .test5{
+        font-size: large;
+        font-weight: bold;
+    }
+    .test6{
+        height: 400px;
+    }
+    .test7{
+        color: #fc2c03;
+        font-size: large;
+        font-weight: bold;
+        padding-top: 20px;
+        text-align: center;
+
+    }
+    .test8{
+        color: #2e1866;
+        margin-bottom: 20px;
+    }
+    .border-1{
+        border: 1px solid #d5dbd7;
+    }
+    .custom-card{
+        box-shadow: 3px 0px 10px -1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 3px 0px 10px -1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 3px 0px 10px -1px rgba(0,0,0,0.62);
+    }
+    .custom-card:hover{
+        box-shadow: 3px 0px 16px -1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 3px 0px 16px -1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 3px 0px 16px -1px rgba(0,0,0,0.62);
+    }
+    .custom-icon{
+        font-size: 65px;
+        text-align: center;
+        color: #FF0A0A;
+    }
+    .custom-icon-1{
+        color: #0A45FF ;
+        font-weight: bold;
+    }
+    .custom-btn-categoury{
+        font-weight: bold;
+        font-size: x-large;
+        width: 300px;
+        height: 60px;
+
+    }
+    .custom-btn-categoury:hover{
+        transition: all 0.4s;
+    }
+    .resume{
+        background-color: #2e1866;
+        opacity: 0.9;
+        height: 400px;
+        width: 100%;
+
+    }
+    .test10{
+        font-size: 250px;
+        font-weight: bolder;
+    }
+
+    .test-11{
+        height: 300px;
+    }
+    .resume-btn{
+        color: white;
+        background-color: #FF0C00 ;
+        font-size: x-large;
+        font-weight: bold;
+        width: 300px;
+        height: 60px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+    }
+    .resume-btn:hover{
+        color:#FF0C00 ;
+        background-color:white;
+        transition: all 0.7s;
+    }
+    .test-12{
+        color:#FF0C00 ;
+        font-weight: bold;
+    }
+    .test-13{
+        color: #2e1866;
+        font-size:30px;
+        font-weight: bold;
+    }
+    .test-14{
+        font-size:18px;
+        font-weight: bolder;
+    }
+    .test-16{
+        color: white;
+        background-color:#FF0C00 ;
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+    }
+    .test-16:hover{
+        color:  white;
+        background-color:orangered;
+        transition: all 0.4s;
+    }
+    .test-17{
+        margin-top:50px;
+        margin-right: 15px;
+        height: 420px;
+        width: 720px;
+    }
+    .apply{
+        background-color: #2e1866;
+
+    }
+    .text-apply-first{
+        font-size: medium;
+        font-weight: bold;
+    }
+    .custom-icon{
+        font-size: 50px;
+        color: #2e1866;
+    }
+
+
+
+    .avatar{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+    }
+    .test-20{
+        color: orangered;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .test-21{
+        color: #3498DB;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .test-22{
+        color: black;
+        font-size: large;
+        font-weight: bold;
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230F0E0E' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230F0E0E' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+    .footer{
+        background-color: #0A1E31  ;
+    }
+    .footer-text-1{
+        color: #ffeb12;
+    }
+    a .tel{
+        text-decoration: none;
+    }
+    .footer-text-2{
+        font-size: x-large;
+        font-weight: bold;
+        color: red;
+    }
+    .footer-text-3{
+        font-size: large;
+    }
+    a.link-1{
+        text-decoration: none;
+    }
+    a.link-1:hover{
+        color: orangered;
+    }
+    a.tel-custom{
+        text-decoration: none;
+    }
+
+    .hr-custom{
+        width: 80%;
+        background-color: #092C4E  ;
+    }
+
+
+
+
+</style>
+
+
+</head>
+<body class="rtl">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a id="custom-navbar-brand" class="navbar-brand navbar-font-1" href="#">جاب یار</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">جاب یار </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                    فرصت های شغلی
+                </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#" tabindex="-1" aria-disabled="true">وبلاگ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#" tabindex="-1" aria-disabled="true">درباره ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">تماس با ما</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a href="https://www.dttsonline.com/dtts/dtts/customer/login.jsp" class="test1">ورود</a>
+            <a href="https://www.dttsonline.com/dtts/dtts/customer/login.jsp" class="test2">ثبت نام</a>
+        </form>
+    </div>
+</nav>
+<main>
+<section class="main">
+    <div class="container">
+        <div class="row test6 justify-content-end align-items-end ">
+            <div class="col-lg-7 ">
+             <h1 class="text-center text-main text-dark mb-3 text-danger">بهترین فرصت های شغلی<br>در بین استارتاپ های ایرانی را<br>پیدا کنید </h1>
+
+                <div class="input-group mb-3  ">
+                    <div class="input-group-prepend order-2">
+                        <button class="btn btn-outline-danger test5" type="button" id="button-addon1">جستجو در مشاغل</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="جستجو در اگهی های شغلی" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <p class="test7">حوزه های مختلف شغلی</p>
+                    <h1 class="test8 text-center mb-3">دسته بندی اگهی های شغلی</h1>
+                </div>
+            </div>
+            <div class="row mb-3 mt-5">
+                <div class="col-lg-3 mb-3">
+                    <div class="card py-3 custom-card">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fas fa-laptop-code custom-icon  pb-4"></i>
+                            <h6 class="custom-icon-1 text-center pb-3">برنامه نویسی و توسعه وب</h6>
+                            <h6 class="custom-icon-1 text-center pb-3">(655)</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mb-3">
+                        <div class="card py-3 custom-card">
+                            <div class="card-body d-flex flex-column">
+                                <i class="fas fa-bullhorn custom-icon  pb-4"></i>
+                                <h6 class="custom-icon-1 text-center pb-3">فروش و بازاریابی</h6>
+                                <h6 class="custom-icon-1 text-center pb-3">(655)</h6>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card py-3 custom-card">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fas fa-camera custom-icon  pb-4"></i>
+                            <h6 class="custom-icon-1 text-center pb-3">هنر و عکاسی</h6>
+                            <h6 class="custom-icon-1 text-center pb-3">(655)</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card py-3 custom-card">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fas fa-calendar-day custom-icon  pb-4"></i>
+                            <h6 class="custom-icon-1 text-center pb-3">خرید و انبارداری</h6>
+                            <h6 class="custom-icon-1 text-center pb-3">(655)</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 d-flex justify-content-center mb-5 ">
+                    <a href="https://htmlcolorcodes.com/"><button type="button" class="btn btn-outline-primary custom-btn-categoury">جستجو در اگهی های شغلی</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="resume">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 ">
+                <div class="test-11 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-white text-center mb-5  test-10">ساخت یک رزومه متفاوت با رزومه ساز انلاین جاب یار</h1>
+                    <button type="button" class="resume-btn">رزومه ساز انلاین</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+ <section class="offer pt-5 pb-5">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-7 mt-4">
+                 <h6 class="test-12 mb-5">خدمات ما به شما</h6>
+                 <p class="test-13 mb-5">تاکنون بیش از 24 هزار نفر از  طریق جاب یار<br>موفق به استخدام شده اند</p>
+                 <p class="test-14 mb-5">لورم ایپسوم یا طرح‌نما  به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                 <p class="test-15 text-muted mb-5">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.</p>
+                 <button type="button" class="test-16 ">لورم ایپسوم</button>
+             </div>
+             <div class="col-lg-5">
+                 <img class="img-fluid test-17" src="women.jpg">
+             </div>
+             <div>
+
+             </div>
+         </div>
+     </div>
+ </section>
+    <section class="apply mt-5">
+        <div class="container my-3 py-3 text-center">
+            <div class="row ">
+                <div class="col">
+                    <p class="text-white font-weight-bold">فرایند استخدام</p>
+                    <h4 class="text-white font-weight-bold ">فرایند استخدام در سرکت های حاضر در جاب یار</h4>
+                </div>
+            </div>
+            <div class="row pt-3">
+<div class="col-lg-3 col-md-6">
+    <div class="card mb-2">
+        <div class="card-body">
+           <div class="d-flex justify-content-center mb-2"> <i class="fas fa-briefcase custom-icon"></i></div>
+            <p class="font-weight-bold">مشاهده اگهی</p>
+            <h6>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ.</h6>
+        </div>
+    </div>
+</div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2"> <i class="fas fa-briefcase custom-icon"></i></div>
+                            <p class="font-weight-bold">ارسال درخواست</p>
+                            <h6>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ .</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2"> <i class="fas fa-briefcase custom-icon"></i></div>
+                            <p class="font-weight-bold">شرکت در مصاحبه</p>
+                            <h6>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ .</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2"> <i class="fas fa-briefcase custom-icon"></i></div>
+                            <p class="font-weight-bold">استخدام</p>
+                            <h6>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="carousel mb-5 py-5" >
+        <div class="container text-center py-5">
+            <div class="row ">
+                <div class="col-lg-9 m-auto">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="JOOST%20DE%20VALK-min.jpg" class="img-fluid avatar" alt="...">
+                                <p class="test-20">جوست دی والک</p>
+                                <p class="test-21">مدیر عامل</p>
+                                <p class="test-22">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="rand-fishkin-founder-moz-min.jpg" class="img-fluid avatar" alt="...">
+                                <p class="test-20">رندی فیشکین</p>
+                                <p class="test-21">مدیر بازاریابی</p>
+                                <p class="test-22">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.
+                            </div>
+                            <div class="carousel-item">
+                                <img src="JOOST%20DE%20VALK-min.jpg" class="img-fluid avatar" alt="...">
+                                <p class="test-20">جوست دی والک</p>
+                                <p class="test-21">مدیر عامل</p>
+                                <p class="test-22">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<section class="footer py-5">
+    <div class="container-fluid py-5">
+        <div class="row py-5">
+          <div class="col-lg-10 m-auto">
+              <div class="row">
+                  <div class="col-lg-3">
+                      <h3 class="py-4 footer-text-1">درباره ما</h3>
+                      <p class="text-white font-weight-bold">جابینجا با ماموریت تحول در جامعه کاری ایران خلق شده تا به کارفرمایان و کارجویان کمک کند. </p>
+                  </div>
+                  <div class="col-lg-3">
+                      <h3 class="py-4 footer-text-1">تماس با ما </h3>
+                      <p class="text-white font-weight-bold">ادرس:ایران،تهران،شهرک ولیعصر،میدان ازمایش،کوچه سوم ،پلاک سه</p>
+
+                      <a class="tel tel-custom text-white font-weight-bold text-decoration-none" href="0211111111">شماره تماس:021111111</a>
+
+                  </div>
+                  <div class="col-lg-3 ">
+                      <h3 class="py-4 footer-text-1">دسترسی سریع</h3>
+
+                      <a class="text-white font-weight-bold link-1 " href="#">فرصت های شغلی</a> <br>
+                      <a class="text-white font-weight-bold link-1 pt-3 " href="#">کارفرمایان برتر</a> <br>
+                      <a class="text-white font-weight-bold link-1 pt-3 " href="#">کارجویان برتر</a> <br>
+                      <a class="text-white font-weight-bold link-1 pt-3" href="#">موقعیت های کاراموزی</a>
+                  </div>
+                  <div class="col-lg-3">
+                      <h3 class="py-4 footer-text-1">اشراک در جاب یار</h3>
+                      <p class="text-white pb-3">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ </p>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend order-1">
+                              <button class="btn btn-outline-warning " type="button" id="button-addon1">اشتراک</button>
+                          </div>
+                          <input type="text" class="form-control input-custom" placeholder="اشتراک در جاب یار" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+        <hr class="hr-custom m-auto">
+        <div class="row d-flex flex-column justify-content-center align-items-center ">
+            <p class="font-weight-bold text-white ">
+                تمامی حقوق این وبسایت متعلق به رضا خواجه احمدی میباشد
+            </p>
+            <p class="text-white font-weight-bold pt-3-1">copyright 2021 all right reserved</p>
+        </div>
+    </div>
+
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.budle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
