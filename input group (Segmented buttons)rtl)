@@ -1,0 +1,27 @@
+<style>
+    .test-oreder-1{
+    order: 1;
+}
+.test-oreder-2{
+    order: 2;
+}
+.test-oreder-3{
+    order: 3;
+}
+</style>
+<div class="input-group test-oreder-1">
+                    <input type="text" class="form-control order-1 test-oreder-1" aria-label="Text input with segmented dropdown button">
+                    <div class="input-group-append ">
+                        <button type="button" class="btn btn-outline-secondary test-oreder-2">Action</button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split test-oreder-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only test-oreder-4">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu ">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
