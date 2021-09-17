@@ -1,0 +1,135 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    text-align: right !important;;
+}
+
+.mega-menu{
+    width: 800px;
+    overflow: hidden;
+    padding: 10px;
+}
+@media(max-width: 768px) {
+.mega-menu{
+    width: 250px;
+}
+
+    .mega-menu img{
+   padding-left: 15px;
+}
+
+}
+.mega-menu a{
+    text-decoration: none;
+    color: #1b1e21;
+    font-size: medium;
+    font-weight: bold;
+}
+.mega-menu a:hover{
+    color: orangered;
+}
+</style>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="rtl">
+<header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                             <img src="تولید%20محتوا.jpg" class="img-fluid custom-img-megamenu">
+                                                <h4 class="text-warning text-center">لوازم خانگی</h4>
+                                                <p class="text-center">انواع لوازم خانگی ایرانی و خارجی از برندهای مشهور با بهترین قیمت</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p class="sub-menu-heading"><strong class="text-danger">یخچال</strong></p>
+                                                <p class=""><a class="text-right " href="#">یخچال سامسونگ</a></p>
+                                                <p><a href="#">یخچال ال جی</a></p>
+                                                <p><a href="#">یخچال سونی</a></p>
+                                                <p><a href="#">یخچال امرسان</a></p>
+                                                <p><a href="#">یخچال اسنوا</a></p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p class="sub-menu-heading"><strong class="text-danger">یخچال</strong></p>
+                                                <p><a class="" href="#">یخچال سامسونگ</a></p>
+                                                <p><a href="#">یخچال ال جی</a></p>
+                                                <p><a href="#">یخچال سونی</a></p>
+                                                <p><a href="#">یخچال امرسان</a></p>
+                                                <p><a href="#">یخچال اسنوا</a></p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p class="sub-menu-heading"><strong class="text-danger">یخچال</strong></p>
+                                                <p><a class="" href="#">یخچال سامسونگ</a></p>
+                                                <p><a href="#">یخچال ال جی</a></p>
+                                                <p><a href="#">یخچال سونی</a></p>
+                                                <p><a href="#">یخچال امرسان</a></p>
+                                                <p><a href="#">یخچال اسنوا</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.budle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
