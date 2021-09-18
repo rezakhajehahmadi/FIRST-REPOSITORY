@@ -1,0 +1,42 @@
+<style>
+custom-shop-card:focus{
+    text-decoration: none;!important;
+}
+.custom-shop-card:hover{
+    text-decoration: none;!important;
+}
+.custom-shop-card:active{
+    text-decoration: none;!important;
+}
+.custom-icon-shop-card{
+    vertical-align: -2px;
+    margin-right: 3px;
+}
+.custom-img-shop-card{
+    width:45px;
+    height: 45px;
+}
+.text-information-product-shop-card{
+    color: #1b1e21;
+}
+.dropdown-menu.show {    //////--این بخش از کد بزار تو سی اس اس مریوطه به هسته خود بوت استرپ باید دیسپلی فلکس کنی تا عکس و اطلاعات محصول بیان کنار هم--//////
+    display: flex;
+}
+</style>
+
+<div class="dropdown">
+                        <a class="btn btn-link custom-shop-card font-weight-bold text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="text-decoration-none  text-white">سبد خرید</span><i class="fas fa-shopping-cart custom-icon-shop-card"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <img src="تولید%20محتوا.jpg" class="custom-img-shop-card">
+                            <ul>
+                                <li class="text-information-product-shop-card font-weight-bold list-unstyled">لپ تاب APPLE</li>
+                                <li class="text-information-product-shop-card font-weight-bold list-unstyled">قیمت:3000000</li>
+                            </ul>
+                            <button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    
