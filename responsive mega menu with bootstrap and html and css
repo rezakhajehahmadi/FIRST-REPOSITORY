@@ -8,7 +8,12 @@ body{
     direction: rtl;
     text-align: right !important;;
 }
-
+@media(max-width: 568px) {                                         -------// این خط کد با عث میشه کانتینر منو در سایزهای پایین جمع شود و ریسپانسیو شود  //--------
+    .dropdown-menu.show{
+        display: flex;
+        width: 250px;
+    }
+}
 .mega-menu{
     width: 800px;
     overflow: hidden;
