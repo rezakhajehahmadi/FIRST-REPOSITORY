@@ -1,0 +1,30 @@
+<style>
+.custom-special-offer-3{
+    width: 240px;
+    height: 240px;
+}                                                      -----عرض و ارتفاع هر دو عکس را جوری در نظر میگیریم که در کانتینر زمان هاور جا نشود-----
+.custom-special-offer-3-1{
+    width: 240px;
+    height: 240px;
+}
+
+.offer-product-image{
+    overflow: hidden;                -----این کد را برای این نوشتیم که وقتی عکس اول در محور ایگرگ میرود بالا ناپدید شود 
+                        و همچنین فضای کلاس افر پروداکت ایمیج را صدو شصت پیکسل در نظر گرفیم تا وقتی عکسمان را بزرگتر از ارتفاع کلاس افر پروداکت ایمیج میگیریم عکس اول ناپدید شود
+   height: 160px;
+}
+
+.offer-product-image img{
+    width: 240px;                       ----این مقدار رو هم برابر با عرض عکس ها میزاریم----
+}
+
+.offer-product-image:hover .custom-special-offer-3,.offer-product-image:hover .custom-special-offer-3-1{
+transform: translateY(-160px);               ---اینجا میگیم زمانی که کلاس افر پروداکت ایمیج هاور میشه عکس های مان باید برن به سمت بالا--- 
+}
+</style>
+
+
+<div class="d-flex flex-column offer-product-image">
+    <img src="headphon-1.jpg"class="custom-special-offer-3">
+   <img src="headphon-2.jpg"class="custom-special-offer-3-1">
+</div>
