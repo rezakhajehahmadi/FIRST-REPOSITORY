@@ -1,0 +1,117 @@
+<style>
+@media (max-width: 576px) {
+   .nav {
+       flex-wrap: nowrap;
+       display: flex;
+       justify-content: center;
+   }
+    .nav-link  {
+        display: block;
+        padding: .5rem 5px;
+        font-size: 15px;!important;
+    }
+    .nav-item .nav-link{
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+}
+@media (max-width:444px) {
+    .custom-special-offer-3{
+        width: 120px;
+      
+    }
+}
+</style>
+
+<section>
+       <div class="container">
+           <div class="row custom-margin-row-section-special-offer">
+               <div class="col-sm-12 col-md-12">
+                   <ul class="nav custom-navlink-dropdown nav-pills mb-3 custom-direction-special-offer" id="pills-tab" role="tablist">
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2  font-weight-bold custom-color-header-special-offer" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">لوازم دیجیتال</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2 font-weight-bold custom-color-header-special-offer" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">مد و پوشاک</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2 font-weight-bold custom-color-header-special-offer" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">قطعات یدکی و لوازم خودرو</a>
+                       </li>
+                   </ul>
+                   <div class="tab-content" id="pills-tabContent">
+                       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                           <div class="row mb-3 custom-row-dropdown-select">
+                               <div class=" col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                   <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                   <img src="headphon-2.jpg"class=" custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                   <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                   <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                   <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                   <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                               <div class="col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class="custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                           <div class="row mb-3">
+                               <div class="col-sm-12  col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class=" custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                               <div class="col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class="custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
