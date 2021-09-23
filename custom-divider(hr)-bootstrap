@@ -1,0 +1,35 @@
+<style>
+  .custom-third-row-news-letter{
+    background-color: #0C1A5D ;
+}
+.h-second-footer{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.custom-third-row-news-letter h4{
+    border-bottom: 3px solid #FD1C01;                    ---برای ساخت جدا کننده یک کلاس بالاتر ایتمی که زیرش میخوایم جدا کننده بزاریم سلکت میکنیم و بعد 
+                                                                               ایتمی که زیرش جدا کننده میاد سلکت میکنیمو بوردر باتم بهش میدیم همچنین برای
+                                                                               هم اندازه کردن جدا کننده و متنی که بالای سرشه دیسپلی اینلاین فلکس میکنیم و اگر بخوایم عرضش
+                                                                               تحت کنترل خودمون باشه دیسپلی بلاک یا اینلاین بلاک میکنیم
+    padding-top: 5px;
+    display: inline-flex;
+
+}  
+</style>
+<div class="row custom-third-row-news-letter">
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">ایران شاپ</h4>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">خدمات مشتریان</h4>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">راهنمای خرید از ایران شاپ</h4>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">ایران شاپ در شبکه های اجماعی</h4>
+                </div>
+            </div>
+            </div>
