@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایران شاپ</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    text-align: right !important;;
+}
+@media (max-width: 768px) {
+    .custom-margin{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 385px) {
+    .custom-screen-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-screen-2 {
+        display: none;
+    }
+}
+@media(max-width: 768px) {
+    .dropdown-menu.show{
+        display: flex;
+        width: 250px;
+
+    }
+
+    .mega-menu img{
+        padding-left: 15px;
+        width: 45px;
+        height: 45px;
+    }
+.custom-display-description-mega-menu{
+    display: none;
+}
+.custom-img-ads-items{
+    align-self: center;
+    height: 70%;
+   width: 90%;
+}
+}
+@media(max-width: 568px) {
+    .dropdown-menu.show{
+        display: flex;
+        width: 250px;
+    }
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        right: -260px;
+    }
+}
+@media (max-width: 992px) {
+    .custom-css-field{
+        min-width:70%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;!important;
+    }
+}
+@media (max-width: 576px) {
+   .nav {
+       flex-wrap: nowrap;
+       display: flex;
+       justify-content: center;
+   }
+    .nav-link  {
+        display: block;
+        padding: .5rem 5px;
+        font-size: 15px;!important;
+    }
+    .nav-item .nav-link{
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+}
+@media (max-width:444px) {
+    .custom-special-offer-3{
+        width: 120px;
+
+    }
+}
+@media (max-width: 992px) {
+    .custom-item-slider-main{
+        min-width: 100%;
+    }
+    .custom-card-slider{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+.header{
+    background-color: #1D4062;
+}
+.custom-text-first-header{
+    border-right: 1px solid white;
+}
+.navitem-header{
+    border-left: 1px solid white;
+}
+.header ul li a{
+    font-size: small;
+}
+
+.test18{
+   margin-bottom: 0;!important;
+    margin-top: 10px;
+}
+
+.dropdown-toggle::after {
+    color: white;
+}
+
+.shop-card .dropdown-toggle{
+    text-decoration: none;
+}
+.custom-icon-shop-card{
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+.custom-img-shop-card{
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+}
+.dropdown-menu.show {
+    display: flex;
+}
+.custom-dismal-shop-card{
+    margin-right: 15px;
+}
+.test-order-1{
+    order: 2;
+}
+.test-order-2{
+    order: 3;
+}
+.test-order-3{
+    order: 2;
+}
+
+.dropdown-menu.show {
+     display: unset;
+}
+.custom-shop-card:focus{
+    text-decoration: none;!important;
+}
+.custom-shop-card:hover{
+    text-decoration: none;!important;
+}
+.custom-shop-card:active{
+    text-decoration: none;!important;
+}
+.custom-icon-shop-card{
+    vertical-align: -2px;
+    margin-right: 3px;
+}
+.custom-img-shop-card{
+    width:45px;
+    height: 45px;
+}
+.text-information-product-shop-card{
+    color: #1b1e21;
+}
+.dropdown-menu.show {
+    display: flex;
+}
+.dropdown-menu.show.custom-dropdown-menu-search-header {
+    display: unset;
+}
+.dropdown, .dropup {
+    position: relative;
+    display: unset;
+    justify-content: end;
+}
+.mega-menu{
+    width: 800px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.custom-menu-hover{
+    color: white;!important;
+}
+.custom-menu-hover:hover{
+    color: #FB6C09 ;!important;
+}
+.custom-discount{
+    font-size: large;
+    font-weight: bold;
+}
+.custom-discount{
+   text-decoration: none;!important;
+}
+.custom-discount:hover{
+    text-decoration: none;!important;
+}
+.custom-discount:active{
+    text-decoration: none;!important;
+}
+.custom-img-beside-slider{
+    width: 250px;
+    height: 250px;
+}
+.custom-field-container{
+    max-width: 1340px;
+}
+
+
+.custom-text-field{
+    color: #1b1e21;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+.custom-icon-field{
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+.custom-css-field{
+    /*box-shadow: 4px 4px 20px -3px rgba(0,0,0,0.75);*/
+    /*-webkit-box-shadow: 4px 4px 20px -3px rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 4px 4px 20px -3px rgba(0,0,0,0.75);*/
+    height: 120px;
+    /*margin-top: 30px;*/
+
+    max-width: 20%;
+}
+.custom-row-field{
+    margin: 0;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.custom-img-ads-items{
+    height: 450px;
+}
+.custom-row-categoury-margin{
+    margin-top: 80px;
+}
+.categoury-description p{
+    font-size: small;
+    color: black;
+}
+.custom-grid-categoury a{
+    text-decoration: none;!important;
+}
+.custom-grid-categoury a:hover{
+    text-decoration: none;!important;
+}
+
+.custom-category-img{
+    width:130px;
+    height: 130px;
+}
+.custom-direction-special-offer{
+    direction: ltr;
+}
+.custom-margin-row-section-special-offer{
+    margin-top: 150px;
+}
+.custom-color-header-special-offer{
+    color: black;
+}
+.nav-pills .nav-link:hover {
+   color: red;!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link:active {
+    color: red;
+    background-color: white;
+}
+.custom-special-offer-3{
+    width: 240px;
+    height: 240px;
+}
+.custom-special-offer-3-1{
+    width: 240px;
+    height: 240px;
+}
+.custom-special-offer-4{
+    font-size: x-large;
+}
+.custom-special-offer-star{
+    color: #FBD309;
+    font-size: large;
+}
+.custom-s-special-offer{
+    color: red;
+    margin-left: 10px;
+}
+
+.offer-product-image{
+    overflow: hidden;
+    height: 160px;
+}
+
+.offer-product-image img{
+    width: 240px;
+}
+
+.offer-product-image:hover .custom-special-offer-3,.offer-product-image:hover .custom-special-offer-3-1{
+transform: translateY(-160px);
+    transition: all 0.4s;
+}
+
+.footer{
+    margin-top: 160px;
+
+}
+.subscripe-text-footer{
+    font-size: 14px;
+}
+.second-text-news-letter{
+    line-height: 33px;
+}
+.custom-container-news-letter{
+    background-color: #0C1A5D ;
+}
+.custom-second-row-news{
+    height: 260px;
+}
+.custom-third-row-news-letter{
+    background-color: #0C1A5D ;
+}
+.h-second-footer{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.custom-third-row-news-letter h4{
+    border-bottom: 3px solid #FD1C01;
+    padding-top: 5px;
+    display: inline-flex;
+
+}
+.custom-p-icon-social-1{
+    color: orangered;
+    font-size: 30px;
+}
+.custom-p-icon-social-2{
+    padding-right: 30px;
+    color:#4789EE;
+    font-size: 30px;
+}
+.custom-p-icon-social-3{
+   margin-right: 20px;
+    border-radius: 50px;
+    background-color: #0366FD;
+    color:white;
+    font-size: 30px;
+}
+.custom-p-icon-social-4{
+   margin-right: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 80px;
+    color: white;
+    font-size: 30px;
+}
+.custom-p-icon-social-1:hover,.custom-p-icon-social-2:hover,.custom-p-icon-social-3:hover,.custom-p-icon-social-4:hover{
+    font-size: 40px;
+}
+</style>
+</head>
+<body class="rtl">
+<!--start-nav-->
+<header>
+    <section class="header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-md-12 col-lg-4 d-none d-lg-block  ">
+                   <p class="text-white font-weight-bold test18 align-self-center">ارسال رایگان| ضمانت بازگشت وجه 7 روزه</p>
+                </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8 d-flex justify-content-center align-items-center custom-screen-1  ">
+                        <ul class="nav mt-2">
+                            <li class="nav-item navitem-header">
+                                <a class="nav-link text-white font-weight-bold" href="#">ادرس فروشگاه</a>
+                            </li>
+                            <li class="nav-item navitem-header">
+                                <a class="nav-link text-white  font-weight-bold" href="#">پیگیری سفارش</a>
+                            </li>
+                            <li class="nav-item navitem-header">
+                                <a class="nav-link text-white custom-screen-2  font-weight-bold" href="#">تلفن:0211111111</a>
+                            </li>
+                            <li class="nav-item navitem-header">
+                                <a class="nav-link text-white  font-weight-bold  d-none d-lg-block" href="#">ضمانت کیفیت محصولات</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8">
+                    <div class="input-group test-order-1">
+                        <input type="text" class="form-control test-order-1" aria-label="Text input with segmented dropdown button">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary test-order-2 font-weight-bold">جستجو</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split test-order-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu custom-dropdown-menu-search-header unset-dropdown-menu bg-primary ">
+                                <a class="dropdown-item text-warning text-center font-weight-bold" href="#">موبایل و لوازم جانبی</a>
+                                <a class="dropdown-item text-warning text-center font-weight-bold" href="#">کامپیوتر و لوازم جانبی</a>
+                                <a class="dropdown-item text-warning text-center font-weight-bold" href="#">قطعات یدکی خودرو</a>
+                                <a class="dropdown-item text-warning text-center font-weight-bold" href="#">پوشاک</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center custom-margin mr-auto">
+                    <div class="dropdown ">
+                        <a class="btn btn-link custom-shop-card font-weight-bold text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="text-decoration-none  text-white">سبد خرید</span><i class="fas fa-shopping-cart custom-icon-shop-card"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <img src="تولید%20محتوا.jpg" class="custom-img-shop-card">
+                            <ul>
+                                <li class="text-information-product-shop-card font-weight-bold list-unstyled">لپ تاب APPLE</li>
+                                <li class="text-information-product-shop-card font-weight-bold list-unstyled">قیمت:3000000</li>
+                            </ul>
+                            <button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="row mt-5">
+    <div class="col-sm-12 col-md-10">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand text-white font-weight-bold" href="#">ایران شاپ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-4 mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold custom-menu-hover text-white" href="#">ایران شاپ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           محصولات
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                           <div class="row">
+                               <div class="col-md-3">
+                                   <img src="تولید%20محتوا.jpg" class="img-fluid custom-img-mega-menu d-none d-lg-block">
+                                   <h3 class="text-warning font-weight-bold">لوازم خانگی</h3>
+                                   <p class="text-center custom-display-description-mega-menu font-weight-bold">دسته بندی لوازم خانگی ایرانی و خارجی از بهترین برندهای ایران و جهان</p>
+                               </div>
+                               <div class="col-md-3">
+                                   <h2>یخچال</h2>
+                                   <h5>یخچال ایرانی</h5>
+                                   <h5>یخچال خارجی</h5>
+                                   <h5>یخچال ایرانی</h5>
+                                   <h5>یخچال خارجی</h5>
+                                   <h5>یخچال ایرانی</h5>
+                               </div>
+                               <div class="col-md-3">
+                                   <h2>تلویزیون</h2>
+                                   <h5>تلویزیون ایرانی</h5>
+                                   <h5>تلویزیون خارجی</h5>
+                                   <h5>تلویزیون ایرانی</h5>
+                                   <h5>تلویزیون خارجی</h5>
+                                   <h5>تلویزیون ایرانی</h5>
+                               </div>
+                               <div class="col-md-3">
+                                   <h2>اتو</h2>
+                                   <h5>اتو ایرانی</h5>
+                                   <h5>اتو خارجی</h5>
+                                   <h5>اتو ایرانی</h5>
+                                   <h5>اتو خارجی</h5>
+                                   <h5>اتو ایرانی</h5>
+                               </div>
+
+                           </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold custom-menu-hover text-white" href="#" >درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold custom-menu-hover text-white" href="#">تماس با ما</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="text-decoration-none custom-discount text-warning mb-0">تخفیفات ویژه</a>
+            </div>
+        </nav>
+    </div>
+</div>
+        </div>
+
+    </section>
+</header>
+<!--end nav-->
+
+<!--start slider-->
+<main>
+<section>
+    <div class="container">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-md-8 mt-3 mb-3  ">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="iphone-13-.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white font-weight-bold">موبایل و لوازم جانبی</h5>
+                                <p class="bg-danger">خرید پوشاک زنانه از بهترین برندهای ایرانی و خارجی</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="iphone-13-.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white font-weight-bold">کامپیوتر و لوازم جانبی</h5>
+                                <p class="bg-danger">خرید کامپیوتر و لوازم جانبی از بهترین برندهای ایرانی و خارجی</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="iphone-13-.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white font-weight-bold">قطعات یدکی خودرو</h5>
+                                <p class="bg-danger">قطعات یدکی خودرو از بهترین برندهای ایرانی و خارجی</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+    <section>
+        <div class="container custom-field-container">
+            <div class="row custom-row-field d-flex justify-content-center">
+                <div class="col-sm-12 col-lg-3 d-flex align-items-center custom-css-field ml-2">
+                    <i class="fas fa-truck text-danger custom-icon-field  ml-2"></i><p class="custom-text-field text-center ">ارسال رایگان به سراسر تهران </p>
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex align-items-center custom-css-field ml-2">
+                    <i class="fas fa-wallet text-danger custom-icon-field   ml-2"></i><p class="custom-text-field text-center ">امکان خرید قسطی </p>
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex align-items-center custom-css-field ml-2">
+                    <i class="fas fa-headset text-danger custom-icon-field  ml-2"></i><p class="custom-text-field text-center ">پشتیبانی 24 ساعته  </p>
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex align-items-center custom-css-field">
+                    <i class="fas fa-hands-helping text-danger custom-icon-field "></i><p class="custom-text-field text-center  ">مشاوره خرید محصولات </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end slider-->
+
+<!--start ads-->
+    <section>
+   <div class="container">
+       <div class="row mt-5">
+           <div class="col-md-3">
+<img src="جارو%20برقی.jpg" class="img-fluid mt-5">
+           </div>
+           <div class="col-md-6 d-flex justify-content-center">
+               <img src="یخچال.jpg" class="img-fluid custom-img-ads-items mb-4 mt-5">
+           </div>
+           <div class="col-md-3">
+               <img src="پخت%20پز.jpg" class="img-fluid mt-5 mb-5">
+           </div>
+       </div>
+   </div>
+    </section>
+
+<!--end ads-->
+
+<!--start-categoury-section-->
+
+    <section>
+        <div class="container">
+            <div class="col-12">
+            <h1 class="text-info text-center font-weight-bold mb-3 mt-5">دسته بندی منتخب ماه</h1>
+            <h2 class="text-danger text-center font-weight-bold mb-5">(دسته بندی کالای دیجیتال)</h2>
+            </div>
+            <div class="row custom-row-categoury-margin">
+        <div class="col-md-3 mb-5 custom-grid-categoury">
+         <a href="#" class="text-decoration-none"><div class="d-flex justify-content-center align-items-center text-decoration-none">
+             <div class="categoury-description text-decoration-none">
+                 <p class="text-center    font-weight-bold">برند سامسونگ</p>
+                 <p class="text-center  font-weight-bold">موبایل و تبلت</p></div>
+             <img src="samsung-galaxy.jpg" class="img-fluid custom-category-img">
+         </div></a>
+        </div>
+                <div class="col-md-3 mb-5 custom-grid-categoury">
+                    <a href="#" class="text-decoration-none"> <div class="d-flex justify-content-center align-items-center">
+                        <div class="categoury-description">
+                            <p class="text-center font-weight-bold">برند اپل</p>
+                            <p class="text-center font-weight-bold">موبایل و تبلت</p></div>
+                        <img src="Samsung-Galaxy-S20-.jpg" class="img-fluid custom-category-img mr-2">
+                    </div></a>
+                </div>
+                <div class="col-md-3 mb-5 custom-grid-categoury">
+                    <a href="#" class="text-decoration-none"><div class="d-flex justify-content-center align-items-center">
+                        <div class="categoury-description">
+                            <p class="text-center font-weight-bold">شیائومی</p>
+                            <p class="text-center font-weight-bold">موبایل و تبلت</p></div>
+                        <img src="mobile%20samsung.jfif" class="img-fluid custom-category-img">
+                    </div></a>
+                </div>
+                <div class="col-md-3 mb-5 custom-grid-categoury">
+                    <a href="#" class="text-decoration-none"> <div class="d-flex justify-content-center align-items-center">
+                        <div class="categoury-description">
+                            <p class="text-center font-weight-bold">هواوی</p>
+                            <p class="text-center font-weight-bold">موبایل و تبلت</p></div>
+                        <img src="samsung-galaxy.jpg" class="img-fluid custom-category-img">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end-categoury-section-->
+<!--start-special-offers-section-->
+   <section>
+       <div class="container">
+           <div class="row custom-margin-row-section-special-offer">
+               <div class="col-sm-12 col-md-12">
+                   <ul class="nav custom-navlink-dropdown nav-pills mb-3 custom-direction-special-offer" id="pills-tab" role="tablist">
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2  font-weight-bold custom-color-header-special-offer" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">لوازم دیجیتال</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2 font-weight-bold custom-color-header-special-offer" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">مد و پوشاک</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link custom-navlink-dropdown-2 font-weight-bold custom-color-header-special-offer" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">قطعات یدکی و لوازم خودرو</a>
+                       </li>
+                   </ul>
+                   <div class="tab-content" id="pills-tabContent">
+                       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                           <div class="row mb-3 custom-row-dropdown-select">
+                               <div class=" col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                   <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                   <img src="headphon-2.jpg"class=" custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                   <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                   <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                   <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                   <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                               <div class="col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class="custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                           <div class="row mb-3">
+                               <div class="col-sm-12  col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class=" custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                               <div class="col-md-6 d-flex justify-content-between align-items-center">
+                                   <div class="d-flex flex-column offer-product-image">
+                                       <img src="headphon-1.jpg"class="img-fluid custom-special-offer-3">
+                                       <img src="headphon-2.jpg"class="custom-special-offer-3-1 d-none d-md-block">
+                                   </div>
+                                   <div class="d-flex flex-column">
+                                       <p class="mb-4 custom-special-offer-4"><strong class="text-primary font-weight-bold">هدفون-مدل bsc100</strong></p>
+                                       <div class="d-flex mb-4">
+                                           <i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i><i class="fas fa-star custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                           <i class="fas fa-star-half-alt custom-special-offer-star"></i>
+                                       </div>
+                                       <div class="font-weight-bold"><s class="custom-s-special-offer">2500000تومان</s>1250000تومان</div>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+    <!--end-special-offers-section-->
+
+<!--start-carousel-->
+
+
+
+<!--end-carousel-->
+
+  </main>
+<footer>
+<!--start-footer-->
+    <section class="footer">
+        <div class="container-fluid ">
+            <div class="row custom-container-news-letter">
+               <div class="container">
+                   <div class="row custom-second-row-news d-flex justify-content-center align-items-center">
+                       <div class="col-md-3">
+                           <h4 class="font-weight-bold pb-3 text-white">عضویت در خبرنامه</h4>
+
+                               <p class="font-weight-bold subscripe-text-footer text-white mb-4">    با عضویت در خبرنامه از  <span class="text-danger font-weight-bold">30% تخفیف هفتگی</span> بهره مند شوید </p>
+
+
+
+                       </div>
+                       <div class="col-md-3 font-weight-bold second-text-news-letter text-white mb-4">
+
+                           به جمع 226000 مشترک ایران شاپ بپیوندید و از تخفیفات هفتگی بهره مند شوید
+                       </div>
+                       <div class="col-md-6">
+                           <div class="input-group mb-3">
+                               <input type="text" class="form-control order-1 w-50" placeholder="ایمیل خود را وارد کنید">
+                               <div class="input-group-append">
+                                   <button class="btn btn-outline-warning w-100 order-2" type="button" id="button-addon2">اشتراک در خبرنامه</button>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+
+            </div>
+            <div class="row custom-third-row-news-letter d-flex justify-content-center pb-4">
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">ایران شاپ</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0 " href="#">وبلاگ ایران شاپ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#">فروش در ایران شاپ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#">فرصت های شغلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#" >تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">خدمات مشتریان</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#">پاسخ به پرسش های متداول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#">رویه مرجوعی کالا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#">شرایط استفاده</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  pr-0" href="#" >حریم خصوصی</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center h-second-footer">راهنمای خرید از ایران شاپ</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">نحوه ثبت سفارش</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">رویه اراسال سفارش</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">شیوه های پرداخت</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h4 class="text-center h-second-footer">ایران شاپ در شبکه های اجماعی</h4>
+
+                    <ul class="nav">
+
+                        <li class="nav-item">
+                            <i class="fab fa-instagram custom-p-icon-social-1 "></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fab fa-twitter custom-p-icon-social-2"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fab fa-telegram custom-p-icon-social-3"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fab fa-linkedin custom-p-icon-social-4"></i>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+
+</footer>
+<!--<div class="container-fluid">-->
+<!--   -->
+<!--     -->
+<!--    </div>-->
+<!--</div>-->
+
+<!--end-footer-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.budle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
