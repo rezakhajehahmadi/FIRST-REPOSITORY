@@ -49,6 +49,24 @@
         }
     }
     
+    .form-inline{
+    animation: movedown3 4s linear 1;
+    animation-delay: 4s;
+    visibility: hidden;   این برای وقتی است که میوای انیمشن توی صفحه ظاهر بشه 
+    animation-fill-mode: forwards; اگر اینرو نزاری انیمیشن بعد از ظاهر شدن دوباره ناپدید میشه
+}
+@keyframes movedown3 {
+    0%{
+        transform: translateY(0px);   مقدار اینهارو هم میتونی تغیر بدی
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+
+    }
+}
+    
 </style>
 </head>
 <body class="rtl">
