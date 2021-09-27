@@ -74,10 +74,10 @@
     visibility: hidden;
     animation-fill-mode: forwards;
 }
-@keyframes zoomin  {
+@keyframes zoomin  {    برای انیمیشن دار کردن عکس از این استفاده میشود           
     0%{
-        transform: scale(0.5);
-        visibility: visible;
+        transform: scale(0.5);  یعنی در نقطه شروع با این اندازه اغاز شو
+        visibility: visible; 
     }
     100%{
         transform: scale(1);
