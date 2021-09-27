@@ -91,6 +91,27 @@ https://www.youtube.com/watch?v=G34g7vcpN0s لینک اموزش
     }
 }
 
+.nav-testi{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;                          وقتی جایگاه رو در اینجا مشخص میکنی نقطه صفر کی فریم میشه جایی که اینجا مشخص کردی
+    bottom: 180px;
+    animation: moveup 1s linear 1s;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveup  {
+    0%{
+        transform: translateY(100px) rotate(-90deg);  این مقداری که دادی نسبت به جایگاه بالا مشخص میشه
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0) rotate(-90deg);   نقطه صفر میشه جایی که در بالا مشخص کردی
+        visibility: visible;
+    }
+}
+
 </style>
 </head>
 <body class="rtl">
@@ -130,6 +151,13 @@ https://www.youtube.com/watch?v=G34g7vcpN0s لینک اموزش
     </div>
 </nav>
 <img class="img" src="iphone-13-.jpg">
+
+<nav class="nav nav-testi">
+
+    <a class="nav-link" href="#">توئیتر</a>
+    <a class="nav-link" href="#">اینستاگرام</a>
+    <a class="nav-link " href="#" >تلگرام</a>
+</nav>
 
 
 
