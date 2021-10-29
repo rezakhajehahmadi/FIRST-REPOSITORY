@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>print current window</title>
+  </head>
+  <body>
+    <p>click on the below button to print this page</p>
+    <button onclick="print_this_page()">print this page</button>
+    <script>
+      function print_this_page() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>
