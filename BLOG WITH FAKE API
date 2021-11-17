@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    <link rel="stylesheet" href="index.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <script>
+    
+    
+    let postsurl = "https://jsonplaceholder.typicode.com/posts";
+let usersurl = "https://jsonplaceholder.typicode.com/users";
+let app = document.querySelector("#app");
+
+async function getAuthor(url, id) {
+  let response = await fetch(url + id);
+
+  let author = await response.json();
+
+  return author;
+}
+
+async function getArticles(url) {
+  let response = await fetch(url);
+
+  let data = await response.json();
+
+  data.forEach(async (post) => {
+    post.user = await getAuthor(usersurl, post.userID);
+
+    app.innerHTML += `<article>
+
+    <h2 class="h4">${post.title}</h2>
+    <small class="badge badge-primary">${post.user}</small>
+    <p>${post.body}</p>
+  
+  </article>`;
+  });
+}
+getArticles(postsurl);
+
+    
+    </script>
+
+    <title>MY BLOG</title>
+  </head>
+  <body>
+
+<div class="container">
+
+<div class="w-50 mx-auto my-3">
+
+<h1 class="text-center">MY BLOG</h1>
+<hr>
+<div id="app">
+
+
+
+</div>
+
+</div>
+
+</div>
+   
+ 
+      <script type="text/javascript" src="index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    </p>
+  </body>
+</html>
