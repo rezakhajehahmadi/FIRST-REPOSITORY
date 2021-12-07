@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    <link rel="stylesheet" href="index.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <style></style>
+
+    <script>
+    
+    
+    const products = [
+  {
+    title: "book1",
+
+    exist: true,
+  },
+
+  {
+    title: "book2",
+
+    exist: false,
+  },
+
+  {
+    title: "book3",
+
+    exist: true,
+  },
+
+  {
+    title: "book4",
+
+    exist: false,
+  },
+
+  {
+    title: "book5",
+
+    exist: false,
+  },
+];
+
+const filters = {
+  searchitem: "",
+  availableproducts: false,
+};
+
+const renderproducts = function (products, filters) {
+  let filteredproducts = products.filter(function (item) {
+    return item.title.toLowerCase().includes(filters.searchitem.toLowerCase());
+  });
+
+  filteredproducts = filteredproducts.filter(function (item) {
+    if (filters.availableproducts) {
+      return item.exist;
+    } else {
+      return true;
+    }
+  });
+
+  document.querySelector("#products").innerHTML = "";
+
+  filteredproducts.forEach((item) => {
+    const productEl = document.createElement("p");
+
+    productEl.textContent = item.title;
+
+    document.querySelector("#products").appendChild(productEl);
+  });
+};
+
+renderproducts(products, filters);
+
+document.querySelector("#search-products").addEventListener("input", (e) => {
+  filters.searchitem = e.target.value;
+
+  renderproducts(products, filters);
+});
+
+document.querySelector("#add-product-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  products.push({
+    title: e.target.elements.productTitle.value,
+
+    exist: true,
+  });
+
+  renderproducts(products, filters);
+
+  e.target.elements.productTitle.value = "";
+});
+
+document
+  .querySelector("#available-products")
+  .addEventListener("change", (e) => {
+    filters.availableproducts = e.target.checked;
+
+    renderproducts(products, filters);
+  });
+  
+    
+    </script>
+
+    <title></title>
+  </head>
+  <body>
+
+
+    <h1>bookstore</h1>
+
+    <input type="text" id="search-products" placeholder="search...">
+
+    <label>
+
+<input type="checkbox" id="available-products"> SHOW-AVAILABLE-PRODUCT
+
+    </label>
+
+    <div1 id="products"></div1>
+
+    <form id="add-product-form">
+
+<input type="text" name="productTitle" placeholder="add product...">
+
+<button>Add product</button>
+
+    </form>
+
+
+   
+
+      <script type="text/javascript" src="index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    </p>
+  </body>
+</html>
