@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LANDING-PAGE.CSS" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    
+    
+    <style>
+    
+    
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first-container {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 50px;
+
+  margin-bottom: 190px;
+}
+
+.first-section {
+  background-color: #d71920;
+
+  width: 1236px;
+
+  height: 309px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.first-section-inner {
+  background-color: white;
+
+  width: 618px;
+
+  height: 515px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: absolute;
+
+  z-index: 2;
+
+  border: 1px solid red;
+}
+
+.first-text {
+  color: #d71920;
+
+  font-size: 36px;
+
+  font-weight: 400px;
+
+  text-align: center;
+
+  line-height: 57.19px;
+}
+
+.second-text {
+  color: #000000;
+
+  font-size: 24px;
+
+  font-weight: 400px;
+
+  text-align: center;
+
+  line-height: 57.19px;
+}
+
+.first-btn {
+  background-color: #d71920;
+
+  color: white;
+
+  width: 341px;
+
+  height: 70px;
+
+  text-align: center;
+
+  border: none;
+
+  font-size: 30px;
+
+  font-weight: 50px;
+}
+
+.first-btn:hover {
+  border-color: blue;
+}
+
+.second-container {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.second-section {
+  position: relative;
+
+  width: 1236px;
+
+  height: 347px;
+
+  background-color: #d71920;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.inner-img {
+  width: 1030px;
+
+  height: 241px;
+}
+
+.second-btn {
+  position: absolute;
+
+  background-color: #d71920;
+
+  color: white;
+
+  width: 358.31px;
+
+  height: 70px;
+
+  border: none;
+
+  font-size: 36px;
+
+  font-weight: 400px;
+
+  top: 43px;
+}
+
+.third-btn {
+  position: absolute;
+
+  background-color: #d71920;
+
+  color: white;
+
+  border: none;
+
+  width: 358.31px;
+
+  height: 110px;
+
+  bottom: 51px;
+
+  font-size: 36px;
+
+  font-weight: 400px;
+}
+
+/* <--- tablet size ---> */
+
+@media only screen and (max-width: 1024px) {
+  .first-section {
+    background-color: white;
+  }
+
+  .first-section-inner {
+    width: 980px;
+
+    height: 382px;
+  }
+
+  .first-text {
+    font-size: 36px;
+
+    font-weight: 400px;
+  }
+
+  .second-text {
+    font-size: 24px;
+
+    font-weight: 400px;
+  }
+
+  .first-btn {
+    margin-top: 135px;
+
+    width: 764.86px;
+
+    height: 81px;
+
+    font-size: 48px;
+
+    font-weight: 400px;
+  }
+
+  .second-section {
+    width: 1008px;
+
+    height: 656px;
+  }
+
+  .inner-img {
+    width: 840px;
+
+    height: 455.61px;
+  }
+
+  .second-btn {
+    width: 244.12px;
+
+    height: 54px;
+
+    font-size: 36px;
+
+    font-weight: 400px;
+
+    top: 100px;
+  }
+
+  .third-btn {
+    width: 358.31px;
+
+    height: 94px;
+
+    font-size: 36px;
+
+    font-weight: 400px;
+
+    bottom: 100px;
+  }
+}
+
+/* <--- mobile size ---> */
+
+@media only screen and (max-width: 320px) {
+  .first-section {
+    background-color: white;
+  }
+
+  .first-section-inner {
+    width: 304px;
+
+    height: 243px;
+  }
+
+  .first-text {
+    font-size: 24px;
+
+    font-weight: 400px;
+  }
+
+  .second-text {
+    font-size: 18px;
+
+    font-weight: 400px;
+  }
+
+  .first-btn {
+    margin-top: 0;
+
+    width: 230.85px;
+
+    height: 70px;
+
+    font-size: 24px;
+
+    font-weight: 400px;
+  }
+
+  .second-section {
+    width: 304px;
+
+    height: 268px;
+  }
+
+  .inner-img {
+    width: 253.33x;
+
+    height: 186.13px;
+  }
+
+  .second-btn {
+    width: 209.95px;
+
+    height: 49px;
+
+    font-size: 36px;
+
+    font-weight: 400px;
+
+    top: 178px;
+  }
+
+  .third-btn {
+    width: 209.95px;
+
+    height: 49px;
+
+    font-size: 36px;
+
+    font-weight: 400px;
+
+    bottom: 178px;
+  }
+}
+
+ 
+    
+    </style>
+    
+    
+  </head>
+  <body>
+    <main>
+      <div class="first-container">
+        <div class="first-section">
+          <div class="first-section-inner">
+            <p class="first-text">This is just a test</p>
+
+            <p class="second-text">Bootstrap framework is not allowed</p>
+
+            <button class="first-btn">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-container">
+        <div class="second-section">
+          <button class="second-btn">Title</button>
+
+          <img src="Rectangle 4.png" class="inner-img" />
+
+          <button class="third-btn">link Button</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
