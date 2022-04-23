@@ -1,0 +1,9 @@
+.site-title{
+    visibility: hidden
+}
+.site-description{
+    visibility: hidden
+}
+.copyright{
+    visibility: hidden
+}
